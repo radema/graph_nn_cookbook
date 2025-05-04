@@ -1,0 +1,28 @@
+[project]
+name = "graph_nn_cookbook"
+version = "0.1.0"
+requires-python = ">=3.9"
+description = "Data science template built with uv"
+authors = [
+    {name = "Raul De Maio"}
+    ]
+dependencies = [
+    "black",
+    "flake8",
+    "isort",
+    "mypy",
+    "interrogate",
+    "nbqa",
+    "pdoc",
+    "pytest",
+    "pre-commit",
+    "click",
+    "ipykernel",
+    "pandas",
+    "numpy",
+    "jupyter",
+    "rich",
+    "loguru",
+    "torch-geometric>=2.6.1",
+    "torch>=2.7.0",
+]
