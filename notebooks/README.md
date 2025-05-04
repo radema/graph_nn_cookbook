@@ -9,9 +9,9 @@ This directory is for **exploratory analysis**, **data preprocessing**, and **ex
 ### 📁 Naming Convention
 Please follow a numeric prefix to maintain order:
 
-- 01_data_exploration.ipynb 
-- 02_feature_engineering.ipynb 
-- 03_model_training.ipynb 
+- 01_data_exploration.ipynb
+- 02_feature_engineering.ipynb
+- 03_model_training.ipynb
 - 04_model_evaluation.ipynb
 
 
@@ -42,10 +42,9 @@ If you enabled `nbQA` in pre-commit, your notebooks will be linted automatically
 
 ## 🔒 Commit Policy
 
-✅ Clean notebooks: no large outputs  
-✅ Modular structure  
-✅ Descriptive filenames  
+✅ Clean notebooks: no large outputs
+✅ Modular structure
+✅ Descriptive filenames
 ✅ Clear titles and documented steps
 
 ---
-

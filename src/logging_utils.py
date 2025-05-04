@@ -2,7 +2,10 @@ import logging
 import os
 from datetime import datetime
 
-def setup_logger(name: str = "project_logger", level=logging.INFO, log_to_file=True) -> logging.Logger:
+
+def setup_logger(
+    name: str = "project_logger", level=logging.INFO, log_to_file=True
+) -> logging.Logger:
     """Create and return a standardized logger"""
     logger = logging.getLogger(name)
     logger.setLevel(level)
