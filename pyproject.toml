@@ -25,4 +25,6 @@ dependencies = [
     "loguru",
     "torch-geometric>=2.6.1",
     "torch>=2.7.0",
+    "matplotlib>=3.9.4",
+    "networkx>=3.2.1",
 ]
