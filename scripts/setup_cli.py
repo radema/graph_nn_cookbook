@@ -1,3 +1,6 @@
+"""
+CLI tool for setting up and managing a template using uv.
+"""
 import subprocess
 
 import click
@@ -5,7 +8,9 @@ import click
 
 @click.group()
 def cli():
-    """CLI tool for setting up and managing the Data Science Project Template using uv."""
+    """CLI tool for setting up
+    and managing the a template
+    using uv."""
     pass
 
 
@@ -40,7 +45,13 @@ def docs():
 
 @cli.command()
 def all():
-    """Run all setup steps in order: create env, install deps, pre-commit, test, docs"""
+    """Run all setup steps in order:
+    * create env,
+    * install deps,
+    * pre-commit,
+    * test,
+    * docs
+    """
     click.echo("🚀 Running full setup with uv...")
     create_env.invoke(click.Context(create_env))
     install.invoke(click.Context(install))
