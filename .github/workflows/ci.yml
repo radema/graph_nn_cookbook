@@ -26,6 +26,7 @@ jobs:
       run: |
         uv venv
         uv pip install -e .
+        pip install pytest
         pip install pre-commit  # Add this line to ensure pre-commit is installed
         pre-commit install
     - name: Run Pre-commit
