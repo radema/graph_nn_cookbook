@@ -43,6 +43,7 @@ repos:
         - setuptools
       args:
         - --extend-ignore=E402
+      exclude: ^notebooks/02_*_marimo.ipynb
     - id: nbqa-mypy
       additional_dependencies:
         - mypy
