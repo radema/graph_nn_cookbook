@@ -4,6 +4,7 @@ from typing import Optional, Union
 import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
+from sklearn.manifold import TSNE
 
 
 def visualize_graph(G: nx.Graph, color: Union[str, list]):
@@ -49,4 +50,21 @@ def visualize_embedding(
         plt.xlabel(
             f"Epoch: {epoch}, Loss: {loss.item(): .4f}", fontsize=16
         )  # noqa: E231
+    plt.show()
+
+
+def visualize_TSNE(h, color):
+    """
+    Visualize the node embeddings using t-SNE.
+    Args:
+        h (np.array): Node embeddings.
+        color (Union[str, list]): Color for the nodes.
+    """
+    z = TSNE(n_components=2).fit_transform(h.detach().cpu().numpy())
+
+    plt.figure(figsize=(10, 10))
+    plt.xticks([])
+    plt.yticks([])
+
+    plt.scatter(z[:, 0], z[:, 1], s=70, c=color, cmap="Set2")
     plt.show()
