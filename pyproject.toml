@@ -27,4 +27,5 @@ dependencies = [
     "torch>=2.7.0",
     "matplotlib>=3.9.4",
     "networkx>=3.2.1",
+    "marimo>=0.13.6",
 ]
