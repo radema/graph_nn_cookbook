@@ -93,7 +93,7 @@ def main(filter_column: str, threshold: float, output_folder: str = "output_filt
     for region, url in REGION_LINKS.items():
         log.info(f"Elaborando regione: {region}")
         process_zip_and_save_filtered_csvs(
-            url, filter_column, threshold, output_folder + "/" + region
+            url, filter_column, threshold, output_folder + "/Italia/" + region
         )
     log.info("Completato il download e filtraggio dei file CSV.")
 
