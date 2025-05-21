@@ -49,7 +49,7 @@ def process_zip_and_save_filtered_csvs(
                 with z.open(filename) as file:
                     try:
                         # Legge il CSV con Polars
-                        df = pl.read_csv(file, separator=";")
+                        df = pl.read_csv(file, separator=";", infer_schema_length=0)
 
                         if filter_column in df.columns:
                             # Filtra i dati

@@ -25,3 +25,5 @@ REGION_LINKS = {
     "Sicilia": "https://www.istat.it/storage/cartografia/matrici_distanze/Sicilia.zip",
     "Sardegna": "https://www.istat.it/storage/cartografia/matrici_distanze/Sardegna.zip",
 }
+
+URL_CONTIGUI = "https://www.istat.it/wp-content/uploads/2024/05/MatriciContiguita_Comuni_2018_2023.zip"
