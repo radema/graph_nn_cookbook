@@ -33,4 +33,5 @@ dependencies = [
     "duckdb>=1.2.2",
     "requests>=2.32.3",
     "types-requests>=2.32.0.20250328",
+    "openpyxl>=3.1.5",
 ]
